@@ -1,3 +1,4 @@
+/* MAIN STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +19,11 @@ body {
     height: 100%;
     /* background-color: green; */
 }
-
+/* NAV MAIN */
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: 60px;
     background-color: whitesmoke;
@@ -36,46 +37,54 @@ body {
     height: 60px;
     /* padding: 5px; */
     /* background-color: yellow; */
+    cursor: pointer;
+    pointer-events: visible;
+}
+.navEl:hover {
+    background-color: yellowgreen;
 }
 .navEl > svg {
     fill: #1f1f1f;
     width: 40px;
     height: 40px;
     margin: auto;
+    pointer-events: none;
 }
-
+/* PAGE MAIN */
 .page {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
-    background-color: brown;
     overflow: hidden;
     flex-shrink: 1;
 }
 .pageEl {
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
-    /* height: 100%; */
-    /* background-color: whitesmoke; */
+    width: 100%;
+    height: 100%;
     overflow-y: scroll;
 }
+/* MAIN PAGE */
 #mainPage {
     background-color: yellowgreen;
 }
+/* OTHER PAGES */
 #contactsPage {
     background-color: whitesmoke;
 }
 #financePage {
     background-color: whitesmoke;
 }
-#calendarPage {
-    background-color: whitesmoke;
-}
 #converterPage {
     background-color: whitesmoke;
 }
 #settingsPage {
+    background-color: whitesmoke;
+}
+
+/* TODO PAGE */
+#calendarPage {
     background-color: whitesmoke;
 }
